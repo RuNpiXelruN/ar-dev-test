@@ -1,11 +1,14 @@
-# ar-dev-test
+# Audience Republic Frontend tech test.
+This Vue app is my solution to the Audience Republic frontend technical test.   
 
-## Project setup
+Thanks for the chance to complete this, it was fun! If you have any questions at all please don't hesitate to get in touch. My email is justindavidson23@gmail.com
+
+## Install dependencies
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### To run dev server execute the below and visit localhost:8080
 ```
 yarn serve
 ```
@@ -20,5 +23,4 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Thanks! :)
