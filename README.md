@@ -3,7 +3,7 @@ This Vue app is my solution to the Audience Republic frontend technical test.
 
 Thanks for the chance to complete this, it was fun! If you have any questions at all please don't hesitate to get in touch. My email is justindavidson23@gmail.com
 
-## Install dependencies
+### Install dependencies
 ```
 yarn install
 ```
