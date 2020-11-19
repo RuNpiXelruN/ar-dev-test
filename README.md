@@ -23,4 +23,6 @@ yarn build
 yarn lint
 ```
 
+The app is hosted and can be found at https://aud-rep-jd-test.netlify.app/  
+
 Thanks! :)
