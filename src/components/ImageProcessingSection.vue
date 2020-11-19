@@ -9,8 +9,7 @@
             text="Slide to adjust image brightness! ☀️"
             :reset="bSliderStatus"
             @sliderResetComplete="resetSliderStatus"
-            trackColor="rgba(37, 169, 91, 0.25)"
-            fillColor="#25A95B"
+            :colors="bFillColors"
             :colorStop="brightnessLimiter"
         />
         
@@ -23,8 +22,7 @@
             text="Slide to adjust image contrast! 🌓"
             :reset="cSliderStatus"
             @sliderResetComplete="resetSliderStatus"
-            trackColor="rgba(37, 113, 169, 0.25)"
-            fillColor="#4A90E2"
+            :colors="cFillColors"
             :colorStop="contrastLimiter"
         />
         
@@ -55,6 +53,30 @@ export default {
           bSliderStatus: false,
           cSliderStatus: false
       }  
+    },
+    computed: {
+        bFillColors() {
+            return this.disabled
+                ? {
+                    fill: "#bfbfbf",
+                    track: "#e4e4e4"
+                }
+                : {
+                    fill: "#25A95B",
+                    track: "rgba(37, 169, 91, 0.25)"
+                }
+        },
+        cFillColors() {
+            return this.disabled
+                ? {
+                    fill: "#bfbfbf",
+                    track: "#e4e4e4"
+                }
+                : {
+                    fill: "#4A90E2",
+                    track: "rgba(37, 113, 169, 0.25)"
+                }
+        },
     },
     methods: {
         handleResetImg() {

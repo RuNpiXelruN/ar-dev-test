@@ -1,7 +1,7 @@
 <template>
     <div class="range-section">
         <div class="range-wrapper">
-            <h3 :style="'color: ' + this.fillColor">{{ name }}</h3>
+            <h3 :style="'color: ' + this.colors.fill">{{ name }}</h3>
             <div class="range">
                 <input
                     :id="id"
@@ -30,9 +30,7 @@ export default {
         disabled: Boolean,
         limiter: String,
         reset: Boolean,
-        trackColor: String,
-        fillColor: String,
-        fillColorX: Function,
+        colors: Object,
         colorStop: String
     },
     data() {
@@ -45,12 +43,12 @@ export default {
             return {
                 'background-image':
                 '-webkit-gradient(linear, left top, right top, '
-                + 'color-stop(' + this.colorStop + ', ' + this.fillColor + '), '
-                + 'color-stop(' + this.colorStop + ',' + this.trackColor + ')'
+                + 'color-stop(' + this.colorStop + ', ' + this.colors.fill + '), '
+                + 'color-stop(' + this.colorStop + ',' + this.colors.track + ')'
                 + ')',
-                "background-color": this.trackColor,
-                '--fill-color': this.fillColor,
-                '--track-color': this.trackColor,
+                "background-color": this.colors.track,
+                '--fill-color': this.colors.fill,
+                '--track-color': this.colors.track,
             }
         }
     },
