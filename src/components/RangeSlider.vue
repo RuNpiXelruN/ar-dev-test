@@ -112,6 +112,7 @@ export default {
                 input {
                     width: 100%;
                     margin-bottom: 15px;
+                    cursor: pointer;
                 }
 
                 input[type="range"]{

@@ -61,7 +61,7 @@ export default {
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 15px;
     }
 
 </style>

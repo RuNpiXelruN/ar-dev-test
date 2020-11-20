@@ -15,7 +15,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-    @mixin absoluteImage {
+    @mixin absolute-image {
         position: absolute;
         margin: auto;
         min-width: 1000%;
@@ -45,7 +45,7 @@ export default {
     }
     
     .hero-bg {
-        @include absoluteImage;
+        @include absolute-image;
     }
     .profile-pic-wrapper {
         position: absolute;
@@ -58,6 +58,6 @@ export default {
         border: 2px solid white;
     }
     .profile-pic {
-        @include absoluteImage;
+        @include absolute-image;
     }
 </style>

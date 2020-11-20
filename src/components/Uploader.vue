@@ -115,6 +115,7 @@ export default {
                     this.context = context
 
                     this.$emit('toggleDisabled', false)
+                    this.$emit('newUpload')
                 }
             }
         },
@@ -149,6 +150,7 @@ export default {
         border: 1px solid $border-color;
         border-radius: 5px;
         padding-bottom: 6px;
+        margin-top: 22px;
 
         .canvas-wrapper {
             @include flex-col;

@@ -31,6 +31,7 @@
             :contrast="contrast"
             @toggleDisabled="handleToggleDisabled"
             @resetImg="handleResetImg"
+            @newUpload="handleResetImg"
         />
     </div>
 </template>
@@ -89,9 +90,9 @@ export default {
         },
 
         resetSliderStatus(sliderType) {
-            if (sliderType == "brightness") {
+            if (sliderType === "brightness") {
                 this.bSliderStatus = false
-            } else if (sliderType == "contrast") {
+            } else if (sliderType === "contrast") {
                 this.cSliderStatus = false
             }
         },
